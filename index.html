@@ -1,0 +1,48 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <center>
+    <body background="background1.jpg">
+        <h1 class="heading">AI PING PONG GAME</h1>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">Instructions</button>
+          <br><br>
+            <button class="btn btn-success" onclick="startGame()" id="start">Play Game</button>
+            <br><br>
+            <button class="btn btn-primary" onclick="restart()" id="restart">restart</button>
+            <h3 id="status"></h3>
+              <div id="canvas"></div>
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content"> 
+                    <div class="modal-header"> 
+                      <button class="close" data-dismiss="modal">&times;</button>
+                      <h4>Instructions</h4>
+                    </div>
+                    <div class="modal-body">
+                      <h3>Keep your about 2-3 feet away from the display</h3>
+                      <br>
+                      <h3>Now move your right wrist up and down to move the paddle</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </center>
+        <div>
+            <h4>Developed by Pathik.V.Chavda</h4>
+        </div>
+    <script src="main.js"></script>
+    </body>
+</html>
